@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://localhost:4500",
+        target: "https://google-passport-auth-server.onrender.com",
       },
     },
   },
