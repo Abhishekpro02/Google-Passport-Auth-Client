@@ -1,9 +1,9 @@
-import { FaGithub, FaUnlockAlt } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaUnlockAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BASE_URL } from "../utils/constant";
 
 const SignUpPage = () => {
-  const handleLoginWithGithub = () => {
+  const handleLoginWithGoogle = () => {
     window.open(`/api/auth/google`, "_self");
   };
   return (
@@ -15,14 +15,15 @@ const SignUpPage = () => {
           </h1>
           <button
             type="button"
-            className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4
-						focus:ring-[#24292F]/50 font-medium rounded-lg flex gap-2 p-2 items-center w-full 
-						text-center justify-center"
-            onClick={handleLoginWithGithub}
+            className="text-white bg-gradient-to-br from-blue-500 via-green-400 to-yellow-400 hover:from-red-500 hover:via-pink-500 hover:to-purple-500 focus:ring-4
+                focus:ring-blue-500 font-medium rounded-lg flex gap-2 p-2 items-center w-full 
+                text-center justify-center"
+            onClick={handleLoginWithGoogle}
           >
-            <FaGithub className="w-5 h-5" />
-            Sign up with Github
+            <FaGoogle className="w-5 h-5" />
+            Sign up with Google
           </button>
+
           <p className="text-gray-300 text-center">
             By signing up, you will unlock all the features of the app.
             <span>
